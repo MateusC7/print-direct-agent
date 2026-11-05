@@ -6,9 +6,12 @@ what Odoo sends: ESC/POS thermal tickets, ZPL labels and PDFs.
 
 ## How it works
 
-1. Install the agent on the PC (or tablet) the printers are connected to.
-2. In Odoo open *Devices > Print Boxes*, copy the **System URL** and the **Security Token**.
-3. Paste them in the agent and press **Save and Connect**. The printers are detected and synced to Odoo automatically.
+1. Download the app from the host form in Odoo (*Devices > Print Boxes*) and install it on the PC (or tablet) the printers are connected to.
+2. Open the app. Odoo shows "App detected and active on this computer".
+3. Click **Detect and Link this Device**. The host is linked and all printers are detected and synced automatically.
+
+No copying or pasting is needed. Only for a **remote connection** (the device is on a different physical network)
+copy the Server URL and Security Token shown in Odoo into the app once.
 
 The agent exposes a local server (`http://127.0.0.1:18069`, HTTPS on `18070`) used by the browser, and can also poll
 your Odoo server (cloud relay) so tablets and phones can print through it.
