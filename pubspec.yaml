@@ -1,0 +1,95 @@
+name: print_app
+description: "Agente de Impresión Local — SoftwareRestaurante"
+publish_to: 'none'
+
+version: 2.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # UI / Fonts
+  google_fonts: ^6.2.1
+
+  # WebView
+  flutter_inappwebview: ^6.1.5
+  flutter_presentation_display: ^2.0.8
+
+  # State management
+  provider: ^6.1.2
+
+  # Servidor HTTP/HTTPS local
+  shelf: ^1.4.2
+  shelf_router: ^1.1.4
+
+  # Lanzar el navegador (bypass SSL)
+  url_launcher: ^6.3.1
+
+  # Directorio de documentos / temporales (para certs)
+  path_provider: ^2.1.4
+
+  # Persistencia: puerto, idioma, tema
+  shared_preferences: ^2.3.2
+
+  # Ejecutar mkcert nativo
+  process_run: ^1.2.1
+
+  # Win32 API — impresoras en Windows
+  win32: ^5.5.4
+
+  # FFI base
+  ffi: ^2.1.3
+
+  # HTTP para descarga de mkcert (macOS/Linux)
+  http: ^1.2.2
+
+  # Firma HMAC-SHA256 de las peticiones al Servidor de Odoo
+  crypto: ^3.0.6
+
+  # Permisos en Android (Bluetooth / Red)
+  permission_handler: ^11.3.1
+
+  # Cargar y renderizar archivos SVG
+  flutter_svg: ^2.0.10
+
+  # Conversión de Imagen a PDF para impresión térmica
+  pdf: ^3.11.1
+  image: ^4.3.0
+
+  # Escáner nativo de código de barras
+  mobile_scanner: ^6.0.4
+
+  # Hardware (Balanzas, Escáneres Seriales)
+  usb_serial: ^0.5.2
+
+  # Bandeja del sistema y manejo de ventana en escritorio
+  tray_manager: ^0.2.4
+  window_manager: ^0.4.3
+
+  # Iconos Premium y UI
+  font_awesome_flutter: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "yes"
+  ios: true
+  image_path: "assets/images/logo_restaurant.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/mkcert/
+    - assets/images/
+    - assets/apps/
